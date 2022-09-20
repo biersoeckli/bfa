@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   parseServerUrl: 'http://localhost:1337/parse',
-  parseAppId: 'attendence-list',
+  parseAppId: 'attendance-list',
   attendanceListUrl: 'http://localhost:4200'
 };
 
