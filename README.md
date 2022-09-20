@@ -1,6 +1,6 @@
-# BFA (Bataillonsinterner Finanzausgleich)
+# BFA
 
-This repo contains the BFA, one of total 3 components from the <a href="https://github.com/biersoeckli/attendance-list">attendance list</a>.
+This repo contains the BFA (Bataillonsinterner Finanzausgleich), one of total 3 components from the <a href="https://github.com/biersoeckli/attendance-list">attendance list</a>.
 
 <b>List of all components:</b>
 - <a href="https://github.com/biersoeckli/attendance-list">Attendance List</a>
