@@ -7,7 +7,7 @@ This repo contains the BFA (Bataillonsinterner Finanzausgleich), one of total 3 
 - <a href="https://github.com/biersoeckli/bfa">BFA (Bataillonsinterner Finanzausgleich) (this repo)</a>
 - <a href="https://github.com/biersoeckli/fischmarkt">Fischmarkt</a>
 
-## Whats this?
+## What's this?
 
 The BFA is a Self-Checkout-Kiosk-System. It was originally created to purchase products at the internal <a href="https://www.vtg.admin.ch/de/mein-militaerdienst/allgemeines-zum-militaerdienst/dienstpflicht.html">WK</a>-Kiosk in a Swiss Army bataillon.
 
