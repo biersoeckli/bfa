@@ -49,7 +49,7 @@ export class AppComponent {
   private async logout() {
     this.currentUser = null;
     Parse.User.logOut().then(() => {
-      location.reload();
+      //location.reload();
     });
   }
 }

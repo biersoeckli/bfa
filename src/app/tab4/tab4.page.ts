@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
-import { ExportToCsv } from 'export-to-csv';
+import { mkConfig, generateCsv, download } from "export-to-csv";
 import { OrderService } from '../services/order.service';
 import { UserService } from '../services/user.service';
 import * as Parse from 'parse';
@@ -129,6 +129,14 @@ export class Tab4Page implements OnInit {
 
   createCsv(data: any) {
 
+    const csvConfig = mkConfig({ 
+      useKeysAsHeaders: true,
+      fieldSeparator: ';',
+      quoteStrings: false,
+      decimalSeparator: '.',
+     });
+
+     // legacy
     const options = {
       fieldSeparator: ';',
       quoteStrings: '',
@@ -139,10 +147,13 @@ export class Tab4Page implements OnInit {
       useTextFile: false,
       useBom: false,
       useKeysAsHeaders: true,
-      // headers: ['Column 1', 'Column 2', etc...] <-- Won't work with useKeysAsHeaders present!
     };
+    /*
     const csvExporter = new ExportToCsv(options);
-    csvExporter.generateCsv(data);
+    csvExporter.generateCsv(data);*/
+
+    const csv = generateCsv(csvConfig)(data);
+    download(csvConfig)(csv);
   }
 
   groupOrdersByUser(xs) {
