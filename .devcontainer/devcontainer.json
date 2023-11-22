@@ -1,0 +1,19 @@
+{
+	"name": "Ubuntu BFA",
+	"dockerComposeFile": "./docker.compose.yml",
+	"service": "vscode-container",
+	"workspaceFolder": "/workspace",
+	"shutdownAction": "stopCompose",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"bradlc.vscode-tailwindcss",
+				"trivadis.ngtvd-extensions",
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"pflannery.vscode-versionlens"
+			]
+		}
+	},
+	"postStartCommand": "git config --global --add safe.directory /workspace"
+}
